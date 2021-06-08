@@ -28,14 +28,14 @@
 
                         <tr>
                             <th>登録日時</th>
-                            <td><fmt:formatDate value="${employee.created_at}"
+                            <td><fmt:formatDate value="${report.updated_at}"
                                     pattern="yyyy-MM-dd HH:mm:ss" /></td>
                         </tr>
 
                         <tr>
                             <th>更新日時</th>
                             <td><fmt:formatDate value="${employee.updated_at }"
-                                    pattern="yyyy-MM-dd:HH:mm*ss" /></td>
+                                    pattern="yyyy-MM-dd HH:mm:ss" /></td>
                         </tr>
                     </tbody>
                 </table>

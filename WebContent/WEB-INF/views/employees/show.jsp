@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <c:import url="/WEB-INF/views/layout/app.jsp">
     <c:param name="content">
         <c:choose>
@@ -28,7 +29,7 @@
 
                         <tr>
                             <th>登録日時</th>
-                            <td><fmt:formatDate value="${report.updated_at}"
+                            <td><fmt:formatDate value="${employee.created_at}"
                                     pattern="yyyy-MM-dd HH:mm:ss" /></td>
                         </tr>
 
